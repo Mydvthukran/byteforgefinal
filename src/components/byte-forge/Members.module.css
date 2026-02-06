@@ -1,0 +1,277 @@
+.members {
+  padding: 140px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-amber);
+  box-shadow: 0 0 8px rgba(200, 120, 48, 0.6);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.heading {
+  font-family: var(--font-sans);
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 44px 24px 36px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.4s ease;
+  overflow: hidden;
+  cursor: pointer; /* changed: make card feel clickable */
+  --glow-x: 50%;
+  --glow-y: 50%;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card:hover {
+  border-color: rgba(200, 120, 48, 0.3);
+}
+
+.cardGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    280px circle at var(--glow-x) var(--glow-y),
+    rgba(200, 120, 48, 0.07),
+    transparent 60%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover .cardGlow {
+  opacity: 1;
+}
+
+.cardBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-amber), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover .cardBorder {
+  opacity: 0.5;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(200, 120, 48, 0.3);
+  background: rgba(200, 120, 48, 0.06);
+  overflow: hidden;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+.initials {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+}
+
+.name {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.role {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+.cardLine {
+  width: 30px;
+  height: 1px;
+  background: var(--accent-amber);
+  opacity: 0.2;
+  margin: 20px auto 0;
+}
+
+.card:link,
+.card:visited,
+.card:hover,
+.card:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.card * {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .members {
+    padding: 100px 20px;
+  }
+
+  .header {
+    margin-bottom: 48px;
+  }
+
+  .heading {
+    font-size: clamp(24px, 4vw, 36px);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    padding: 32px 16px 24px;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 16px;
+  }
+
+  .name {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .role {
+    font-size: 11px;
+  }
+
+  .initials {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .members {
+    padding: 80px 16px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .heading {
+    font-size: clamp(20px, 3vw, 28px);
+  }
+
+  .labelRow {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .label {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .card {
+    padding: 24px 12px 18px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 12px;
+    border: 1px solid rgba(200, 120, 48, 0.2);
+  }
+
+  .name {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .role {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+
+  .initials {
+    font-size: 11px;
+  }
+
+  .cardLine {
+    width: 20px;
+    margin: 14px auto 0;
+  }
+}
