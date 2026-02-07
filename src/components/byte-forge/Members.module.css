@@ -44,8 +44,40 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 28px;
+}
+
+.mentorGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin-bottom: 56px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mentorLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.studentLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .card {
@@ -170,6 +202,15 @@
   text-decoration: none;
 }
 
+.card[data-is-mentor="true"] {
+  border: 1.5px solid rgba(200, 120, 48, 0.6);
+  background: linear-gradient(135deg, rgba(200, 120, 48, 0.08) 0%, var(--bg-card) 100%);
+}
+
+.card[data-is-mentor="true"]:hover {
+  border-color: rgba(200, 120, 48, 0.8);
+}
+
 @media (max-width: 768px) {
   .members {
     padding: 100px 20px;
@@ -181,6 +222,10 @@
 
   .heading {
     font-size: clamp(24px, 4vw, 36px);
+  }
+
+  .mentorGrid {
+    margin-bottom: 48px;
   }
 
   .grid {
@@ -238,6 +283,10 @@
   .label {
     font-size: 11px;
     letter-spacing: 2px;
+  }
+
+  .mentorGrid {
+    margin-bottom: 40px;
   }
 
   .grid {
