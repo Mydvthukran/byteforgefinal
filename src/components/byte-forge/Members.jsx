@@ -8,7 +8,7 @@ import { a } from "framer-motion/client";
 
 const members = [
 	{
-		name: "Ritu Rani",
+		name: "Ms.Ritu Rani",
 		role: "Mentor",
 		initials: "RR",
 		image: "/assets/members/mentor.jpeg",
