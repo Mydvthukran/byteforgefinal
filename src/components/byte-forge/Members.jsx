@@ -15,6 +15,13 @@ const members = [
         isMentor: true,
 	},
 	{
+		name: "Manish Yadav",
+		role: "Lead Developer",
+		initials: "MY",
+		image: "/assets/members/manish.jpeg",
+		link: "https://my-pod-foliyo.vercel.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnI_kuB1g8ufeDSFR7enK2FxDfy_ny-0uhKXUyH3nTzTPOXBuhmhO7JG13SOU_aem_AAiaj9XZ-nWTFvR1oyOXqQ",
+	},
+	{
 		name: "Nishith Yadav",
 		role: "Backend Developer",
 		initials: "NY",
@@ -32,13 +39,7 @@ const members = [
 		initials: "KS",
 		image: "/assets/members/kushagra.jpeg",
 	},
-	{
-		name: "Manish Yadav",
-		role: "Lead Developer",
-		initials: "MY",
-		image: "/assets/members/manish.jpeg",
-		link: "https://my-pod-foliyo.vercel.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnI_kuB1g8ufeDSFR7enK2FxDfy_ny-0uhKXUyH3nTzTPOXBuhmhO7JG13SOU_aem_AAiaj9XZ-nWTFvR1oyOXqQ",
-	},
+	
 ];
 
 function MemberCard({ member, index }) {

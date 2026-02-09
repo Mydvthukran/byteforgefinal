@@ -10,7 +10,7 @@ const links = [
 ];
 
 const contacts = [
-  { name: "Nishit Yadav", phone: "+91 92054 70380", email: "my3596418@gmail.com" },
+  { name: "Nishith Yadav", phone: "+91 92054 70380", email: "Nishyadav38@gmail.com" },
   { name: "Manish Yadav", phone: "+91 9461429507", email: "my3596418@gmail.com" },
 ];
 

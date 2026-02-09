@@ -27,10 +27,8 @@ export default function JoinUs() {
         </h2>
 
         <p className={styles.description}>
-          Be part of a community that builds, learns, and innovates together.
-        </p>
-
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSes1nifMXuuC9MwFNLrcuhCtFl5BW-HRNQU1TI1RGK2vMCh_w/viewform?usp=publish-editor" className={styles.cta}>
+          Be part of a community that builds, learns, and innovates together. </p>
+          <a href="https://forms.gle/T4qd2KXbHbXYs1J17" className={styles.cta}>
           <span>Join us </span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
