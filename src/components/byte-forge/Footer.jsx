@@ -11,7 +11,7 @@ const links = [
 
 const contacts = [
   { name: "Nishith Yadav", phone: "+91 92054 70380", email: "Nishyadav38@gmail.com" },
-  { name: "Manish Yadav", phone: "+91 9461429507", email: "my3596418@gmail.com" },
+ 
 ];
 
 export default function Footer() {
